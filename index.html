@@ -11,11 +11,20 @@
     </head>
     <body>
 
-        <h1>
-            Style Text
-        </h1>
+        <nav>
+            <div class="left">
+                <h1>
+                    Style Text
+                </h1>
+            </div>
+            <div class="right">
+                <p>
+                    <a href="#form"><span class="icon-hamburger"></span> Menu</a>
+                </p>
+            </div>
+        </nav>
 
-        <form>
+        <form id="form" class="settings">
 
             <label>
                 Font Family
@@ -34,7 +43,7 @@
             <label>
                 Font Size
                 <select data-style-text data-font-size name="fontSize">
-                    <option>16px</option>
+                    <option selected>16px</option>
                     <option>20px</option>
                     <option>24px</option>
                     <option>28px</option>
@@ -68,7 +77,7 @@
             <label>
                 Font Style
                 <select data-style-text data-font-style name="fontStyle">
-                    <option value="normal">Normal</option>
+                    <option selected value="normal">Normal</option>
                     <option value="italic">Italic</option>
                     <option value="oblique">Oblique</option>
                 </select>
@@ -92,7 +101,7 @@
             <label>
                 Text Align
                 <select data-style-text data-text-align name="textAlign">
-                    <option value="left">Left</option>
+                    <option selected value="left">Left</option>
                     <option value="center">Center</option>
                     <option value="right">Right</option>
                     <option value="justify">Justify</option>
@@ -103,7 +112,7 @@
                 Padding
                 <select data-style-text name="padding">
                     <option>0</option>
-                    <option>0.125em</option>
+                    <option selected>0.125em</option>
                     <option>0.25em</option>
                     <option>0.375em</option>
                     <option>0.5em</option>
@@ -140,11 +149,15 @@
                 <input data-style-text type="color" name="dropShadowColor" value="#000000">
             </label>
 
-            <input type="reset">
+            <input class="button" type="reset">
+
+            <a class="button" href="#">Done</a>
 
         </form>
 
-        <textarea data-text-area placeholder="Type text here." spellcheck="false"></textarea>
+        <main>
+            <textarea data-text-area placeholder="Type text here." spellcheck="false"></textarea>
+        </main>
 
         <script src="styletext.js"></script>
 
