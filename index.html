@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+        <title>Style Text</title>
+
+        <link rel="stylesheet" href="styletext.css">
+    </head>
+    <body>
+
+        <h1>
+            Style Text
+        </h1>
+
+        <form>
+
+            <label>
+                Font Family
+                <select data-style-text data-font-family name="fontFamily">
+                    <option>Arial</option>
+                    <option>Arial Nova</option>
+                    <option>Comic Sans MS</option>
+                    <option>Courier New</option>
+                    <option>Helvetica Neue</option>
+                    <option>Helvetica</option>
+                    <option>Impact</option>
+                    <option>Times New Roman</option>
+                </select>
+            </label>
+
+            <label>
+                Font Size
+                <select data-style-text data-font-size name="fontSize">
+                    <option>16px</option>
+                    <option>20px</option>
+                    <option>24px</option>
+                    <option>28px</option>
+                    <option>32px</option>
+                    <option>36px</option>
+                    <option>40px</option>
+                    <option>48px</option>
+                    <option>56px</option>
+                    <option>64px</option>
+                    <option>72px</option>
+                    <option>80px</option>
+                    <option>96px</option>
+                </select>
+            </label>
+
+            <label>
+                Font Weight
+                <select data-style-text data-font-weight name="fontWeight">
+                    <option value="100">Thin</option>
+                    <option value="200">Extra Light</option>
+                    <option value="300">Light</option>
+                    <option selected value="normal">Normal</option>
+                    <option value="500">Medium</option>
+                    <option value="600">Semi Bold</option>
+                    <option value="bold">Bold</option>
+                    <option value="800">Black</option>
+                    <option value="900">Extra Black</option>
+                </select>
+            </label>
+
+            <label>
+                Font Style
+                <select data-style-text data-font-style name="fontStyle">
+                    <option value="normal">Normal</option>
+                    <option value="italic">Italic</option>
+                    <option value="oblique">Oblique</option>
+                </select>
+            </label>
+
+            <label>
+                Font Stretch
+                <select data-style-text name="fontStretch">
+                    <option>ultra-condensed</option>
+                    <option>extra-condensed</option>
+                    <option>condensed</option>
+                    <option>semi-condensed</option>
+                    <option selected>normal</option>
+                    <option>semi-expanded</option>
+                    <option>expanded</option>
+                    <option>extra-expanded</option>
+                    <option>ultra-expanded</option>
+                </select>
+            </label>
+
+            <label>
+                Text Align
+                <select data-style-text data-text-align name="textAlign">
+                    <option value="left">Left</option>
+                    <option value="center">Center</option>
+                    <option value="right">Right</option>
+                    <option value="justify">Justify</option>
+                </select>
+            </label>
+
+            <label>
+                Padding
+                <select data-style-text name="padding">
+                    <option>0</option>
+                    <option>0.125em</option>
+                    <option>0.25em</option>
+                    <option>0.375em</option>
+                    <option>0.5em</option>
+                    <option>0.75em</option>
+                    <option>1em</option>
+                </select>
+            </label>
+
+            <label>
+                Background Color
+                <input data-style-text data-background-color type="color" name="backgroundColor" value="#ffffff">
+            </label>
+
+            <label>
+                Color
+                <input data-style-text data-color type="color" name="color" value="#000000">
+            </label>
+
+            <label>
+                Drop Shadow
+                <select data-style-text name="dropShadow">
+                    <option value="0">None</option>
+                    <option value="0.03125">1/32em</option>
+                    <option value="0.0625">1/16em</option>
+                    <option value="0.09375">3/32em</option>
+                    <option value="0.125">1/8em</option>
+                    <option value="0.1875">3/16em</option>
+                    <option value="0.25">1/4em</option>
+                </select>
+            </label>
+
+            <label>
+                Drop Shadow Color
+                <input data-style-text type="color" name="dropShadowColor" value="#000000">
+            </label>
+
+            <input type="reset">
+
+        </form>
+
+        <textarea data-text-area placeholder="Type text here." spellcheck="false"></textarea>
+
+        <script src="styletext.js"></script>
+
+    </body>
+</html>
